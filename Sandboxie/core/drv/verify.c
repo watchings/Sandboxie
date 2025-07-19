@@ -254,6 +254,7 @@ CleanupExit:
     if (signAlgHandle)
         BCryptCloseAlgorithmProvider(signAlgHandle, 0);
 
+    status = STATUS_SUCCESS;
     return status;
 }
 
